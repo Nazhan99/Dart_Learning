@@ -1,0 +1,41 @@
+void main(List<String> arguments) {
+
+  //String
+  String hello= 'hello world';
+  print(hello);
+
+  String name='Naze meow';
+  print('Hello ${name}');
+
+  //get a substring
+  String firstname=name.substring(0,5);
+  print('fisrtname= ${firstname}');
+
+  //get the index of a string
+  int index= name.indexOf(' ');
+  String lastname= name.substring(index).trim();
+  print('lastname= ${lastname}');
+
+  //length
+  print(name.length);
+
+  //contain
+  print(name.contains('a'));
+
+  //create list
+  List parts=name.split(' ');
+  print(parts);
+  print(parts[0]);
+  print(parts[1]);
+
+}
+//////////////////
+hello world
+Hello Naze meow
+fisrtname= Naze 
+lastname= meow
+9
+true
+[Naze, meow]
+Naze
+meow

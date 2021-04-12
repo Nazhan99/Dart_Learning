@@ -1,0 +1,28 @@
+void main(List<String> arguments) {
+
+  //Numbers
+  num age=10;
+
+  //Int
+  int people=6;
+
+  //double
+  double temp= 37.5;
+
+  //parse an int
+  int test= int.parse('12');
+  int err= int.parse('12.09', onError: (source)=>0);
+
+  print(age);
+  print(temp);
+  print(people);
+  print(test);
+  print('err = ${err}');
+
+}
+///////////////////
+10
+37.5
+6
+12
+err = 0
